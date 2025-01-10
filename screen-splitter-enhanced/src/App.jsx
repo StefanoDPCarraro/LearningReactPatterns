@@ -1,16 +1,16 @@
 import { SplitScreen } from "./components/split-screen";
 
 const LeftSideComponent = () => {
-  return <h2>Left Side</h2>
+  return <h2 style={{backgroundColor: 'blue'}}>Left Side</h2>
 }
 
 const RightSideComponent = () => {
-  return <h2>Right Side</h2>
+  return <h2 style={{backgroundColor: 'crimson'}}>Right Side</h2>
 }
 
 function App() {
   return (
-    <SplitScreen Left={LeftSideComponent} Right={RightSideComponent}/>
+    <SplitScreen Left={LeftSideComponent} Right={RightSideComponent} leftWidth={1} rightWidth={3}/>
   );
 }
 
